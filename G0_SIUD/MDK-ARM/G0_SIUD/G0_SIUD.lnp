@@ -1,0 +1,25 @@
+--cpu Cortex-M0+
+"g0_siud\startup_stm32g071xx.o"
+"g0_siud\main.o"
+"g0_siud\stm32g0xx_it.o"
+"g0_siud\stm32g0xx_hal_msp.o"
+"g0_siud\stm32g0xx_hal_gpio.o"
+"g0_siud\stm32g0xx_hal_uart.o"
+"g0_siud\stm32g0xx_hal_uart_ex.o"
+"g0_siud\stm32g0xx_hal_tim.o"
+"g0_siud\stm32g0xx_hal_tim_ex.o"
+"g0_siud\stm32g0xx_hal_rcc.o"
+"g0_siud\stm32g0xx_hal_rcc_ex.o"
+"g0_siud\stm32g0xx_hal_flash.o"
+"g0_siud\stm32g0xx_hal_flash_ex.o"
+"g0_siud\stm32g0xx_hal_dma.o"
+"g0_siud\stm32g0xx_hal_dma_ex.o"
+"g0_siud\stm32g0xx_hal_pwr.o"
+"g0_siud\stm32g0xx_hal_pwr_ex.o"
+"g0_siud\stm32g0xx_hal_cortex.o"
+"g0_siud\stm32g0xx_hal.o"
+"g0_siud\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "G0_SIUD\G0_SIUD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "G0_SIUD.map" -o G0_SIUD\G0_SIUD.axf
